@@ -1,0 +1,42 @@
+# ----------------------------------------------------------------------
+# 1. DEPENDANCES (DOIT TOUJOURS ETRE IGNORE)
+# ----------------------------------------------------------------------
+/node_modules
+/npm-debug.log
+.npm/
+
+# Fichiers de lock auto-générés par les autres gestionnaires
+/yarn.lock
+/pnpm-lock.yaml
+
+# ----------------------------------------------------------------------
+# 2. CONFIGURATION & SECRETS (TRES IMPORTANT)
+# ----------------------------------------------------------------------
+# Fichier pour les variables d'environnement (URI de BDD, clés API, etc.)
+.env
+.env.development
+.env.production
+.env.local
+
+# ----------------------------------------------------------------------
+# 3. FICHIERS SPECIFIQUES A L'ENVIRONNEMENT LOCAL
+# ----------------------------------------------------------------------
+# Logs
+*.log
+logs/
+
+# Fichiers binaires temporaires
+*.out
+
+# ----------------------------------------------------------------------
+# 4. FICHIERS D'EDITEURS (VS Code, Intellij/WebStorm)
+# ----------------------------------------------------------------------
+# Dossier d'IntelliJ / WebStorm (visible sur votre capture)
+.idea/
+
+# Fichiers de Visual Studio Code (si vous l'utilisez)
+.vscode/
+
+# Fichiers de build/distribution (si vous ajoutez un frontend Angular/React)
+/dist
+/build
