@@ -6,6 +6,7 @@ const logger = require('morgan');
 const cors = require('cors');
 
 const skillRouter = require('./routes/skills-route');
+const projectRouter = require('./routes/projects-route');
 
 const app = express();
 
@@ -19,6 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use('/skills', skillRouter);
+app.use('/projects', projectRouter)
 
 connectDB()
 
