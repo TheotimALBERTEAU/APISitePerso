@@ -14,7 +14,7 @@ const ProjectSchema = new mongoose.Schema({
     category: {
         type: String,
         required: true,
-        enum: ['MEAN Stack', 'Python', 'C#', 'MySQL', 'Autre']
+        enum: ['MEAN', 'Python', 'C#', 'MySQL', 'Autre']
     },
     isFeatured: {
         type: Boolean,
