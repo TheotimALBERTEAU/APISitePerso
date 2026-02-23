@@ -7,6 +7,7 @@ const cors = require('cors');
 
 const skillRouter = require('./routes/skills-route');
 const projectRouter = require('./routes/projects-route');
+const experiencesRouter = require('./routes/experience-route');
 
 const app = express();
 
@@ -20,7 +21,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use('/skills', skillRouter);
-app.use('/projects', projectRouter)
+app.use('/projects', projectRouter);
+app.use('/experiences', experiencesRouter);
 
 connectDB()
 

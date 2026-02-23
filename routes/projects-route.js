@@ -13,7 +13,7 @@ router.get("/", async (req, res) => {
             data: projects
         })
     } catch (error) {
-        console.error('Error occurred while getting skills', error);
+        console.error('Error occurred while getting projects', error);
 
         res.status(500).json({
             code: 500,
