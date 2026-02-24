@@ -8,6 +8,7 @@ const cors = require('cors');
 const skillRouter = require('./routes/skills-route');
 const projectRouter = require('./routes/projects-route');
 const experiencesRouter = require('./routes/experience-route');
+const educationRouter = require('./routes/education-route');
 
 const app = express();
 
@@ -23,6 +24,7 @@ app.use(cookieParser());
 app.use('/skills', skillRouter);
 app.use('/projects', projectRouter);
 app.use('/experiences', experiencesRouter);
+app.use('/education', educationRouter);
 
 connectDB()
 
