@@ -14,6 +14,16 @@ const app = express();
 
 const connectDB = require("./db/connectDB");
 
+const rateLimit = require('express-rate-limit');
+
+const limiter = rateLimit({
+    windowMs: 15 * 60 * 1000,
+    max: 100,
+    message: "Trop de requêtes, réessaie plus tard."
+});
+
+app.use(limiter);
+
 app.use(cors())
 
 app.use(logger('dev'));
