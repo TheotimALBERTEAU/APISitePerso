@@ -9,9 +9,3 @@ services:
       - .:/usr/src/app
     environment:
       NODE_ENV: production
-    networks:
-      - web-network
-
-networks:
-  web-network:
-    external: true
