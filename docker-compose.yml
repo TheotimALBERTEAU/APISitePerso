@@ -8,3 +8,5 @@ services:
       - .:/usr/src/app
     environment:
       NODE_ENV: production
+    env_file:
+      - .env
