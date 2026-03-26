@@ -40,3 +40,5 @@ logs/
 # Fichiers de build/distribution (si vous ajoutez un frontend Angular/React)
 /dist
 /build
+
+docker-compose.override.yml

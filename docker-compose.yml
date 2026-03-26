@@ -3,8 +3,6 @@ services:
   app:
     build: .
     container_name: apisiteperso-app-1
-    ports:
-      - "3000:3000"
     volumes:
       - .:/usr/src/app
     environment:
